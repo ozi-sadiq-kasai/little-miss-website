@@ -1,85 +1,78 @@
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-
+  
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 62.5%;
-  background-color: #eae5e5;
+  margin: 0;
+  padding: 0;
 }
-/* header elements */
-#sign-box{
-  width: 100%;
-  height: 15%;
-   background-color: rgb(252, 227, 231);
+.navbar{
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  
-}
-#logo{
-padding: 10px;
-
-
+  justify-content: space-between;
+  align-items:center;
+  background:#c77dff ; 
 }
 
-#shop-name{
-
-  font-family: cursive;
-  font-size: 3rem;
-  padding: 10px;
-  color: #e3780c;
-
+.brand-title{
+  font-size: 2em;
+  margin: 10px;
 }
-
-#little-name{
-  font-size: 0.5rem;
-  color:#662400;
-}
-/* Nav Bar */
-.nav-list{
-  list-style: none;
+ .navbar-links ul{
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  gap: 15%;
+ } 
 
-}
-
-.nav-list li{
-  padding: 10px;
-  font-size: 15px;
-  margin-top: 10px;
-  
-
-}
-
-.nav-list li a{
+ .navbar-links li{
+  list-style:none;
+ }
+ .navbar-links li a{
   text-decoration: none;
-  color: #662400;
-  font-weight: 300px;
-  
+  color: white;
+  padding: 1rem;
+  display: block;
+ }
+ .navbar-links li:hover{
+  color:#7209b7;
+  border-bottom: 3px solid #f72585;
+ }
+.toggle-button{
+  position: absolute;
+  top:.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content:  space-between;
+  width: 30px;
+  height: 21px;
+  color: white;
 }
 
-/* Block 1 */
-
-.block{
-  background: url("images/df49e289b5453d5f5949258f9c763a6c.jpg")no-repeat;
-  background-size:cover;
-  width: 750px;
-  height: 450px;
-  margin:50px auto;  
+@media(max-width:
+600px){
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+    
+  }
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active{
+    display: flex;
+  }
 }
-.block-content{
-  color:whitesmoke;
-  font-size: 1rem;
-  padding-top: 320px;
-  padding-left: 15px;
-  padding-right: 10px;
-  text-align: left;
-
-}
-
-

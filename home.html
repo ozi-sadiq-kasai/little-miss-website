@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>little miss baker</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="carousel.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +25,34 @@
       </ul>
     </div>
   </nav>
+  <div class="hero">
+    <p>
+      Delicious everytime!!!
+    </p>
+  </div>
+  <section class="pick-header">
+    <h1>TOP PICKS</h1>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left">left</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide"><img class="carousel__image"src="images/chocolate cake.jpg" alt="slide1"></li>
+          <li class="carousel__slide"><img class="carousel__image" src="images/chocolate cake.jpg" alt="slide2"></li>
+          <li class="carousel__slide"><img class="carousel__image"src="images/chocolate cake.jpg" alt="slide3"></li>
+          <li class="carousel__slide"><img class="carousel__image"src="images/chocolate cake.jpg" alt="slide4"></li>
+          <li class="carousel__slide"><img class="carousel__image" src="images/chocolate cake.jpg" alt="slide5"></li> 
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">right</button>
+      <div class="carousel-nav">
+        <button class="carousel__indicator current_slide">1</button>
+        <button class="carousel__indicator">2</button>
+        <button class="carousel__indicator">3</button>
+        <button class="carousel__indicator">4</button>
+        <button class="carousel__indicator">5</button>
+      </div>
+    </div>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>

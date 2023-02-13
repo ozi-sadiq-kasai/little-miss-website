@@ -1,5 +1,8 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
   
 body{
@@ -75,4 +78,14 @@ body{
   .navbar-links.active{
     display: flex;
   }
+}
+.hero p{
+ background-image: url("../little-miss-website/images/header.jpg");
+ padding-top: 300px;
+ padding-bottom: 300px;
+ background-size: cover;
+ color: #f72585;
+ text-align: center;
+ font-size: 2em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
